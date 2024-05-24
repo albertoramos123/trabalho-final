@@ -80,3 +80,47 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+/* Estilo do container */
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+/* Estilo do checkbox customizado */
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: inline-block;
+    margin-left: 95%;
+    position: relative;
+    margin-top: -6%;
+}
+
+/* Estilo quando o checkbox está marcado */
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #464646;
+    border-color: #464646;
+}
+
+/* Pseudo-elemento para o ícone de verificação */
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(40deg);
+}

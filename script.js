@@ -1,8 +1,11 @@
-// Seleciona o botão pela classe
-var botaoEntrar = document.querySelector('.login-button');
+document.getElementById('login-button').addEventListener('click', function() {
+    var username = document.getElementById('text').value;
+    var password = document.getElementById('password').value;
 
-// Adiciona um ouvinte de evento para detectar o clique no botão
-botaoEntrar.addEventListener('click', function() {
-    // Aqui você pode colocar o código do alerta que deseja exibir
-    alert("senha incorreta !!!");
+    // Verifica se o nome de usuário e a senha estão corretos
+    if (username === 'seu_usuario' && password === 'sua_senha') {
+        window.location.href = 'user1.html'; // Redireciona para a página do usuário
+    } else {
+        alert('Nome de usuário ou senha incorretos! Por favor, tente novamente.');
+    }
 });
