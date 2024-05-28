@@ -10,9 +10,17 @@
     <div class="container">
         <div class="sidebar-container">
             <div class="header"></div>
-            <img class="logo" src="logo.png" alt="">
+            <img class="logo" src="LOGO.png" alt="logo">
         </div>
         <div class="login-box">
+            <div>
+              
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Escolha uma opção</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#" onclick="selectOption('lanchonete')">Lanchonete</a>
+                        <a href="#" onclick="selectOption('restaurante')">Restaurante</a>
+            </div>
             <div class="welcome-text">Bem Vindos (a)</div>
             <input type="text" class="input-box" placeholder="Usuário">
             <input type="password" class="input-box" placeholder="Senha">
@@ -26,7 +34,7 @@
             <a href="">
             <div class="forgot-password">Esqueceu a senha?</div>
         </a>
-            <button class="login-button">Entrar</button>
+            <button src="user1.html" class="login-button">Entrar</button>
             <script src="script.js"></script>
         </div>
     </div>

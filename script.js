@@ -9,3 +9,12 @@ document.getElementById('login-button').addEventListener('click', function() {
         alert('Nome de usuário ou senha incorretos! Por favor, tente novamente.');
     }
 });
+
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function selectOption(option) {
+    alert("Opção selecionada: " + option);
+    document.getElementById("myDropdown").classList.remove("show");
+}
